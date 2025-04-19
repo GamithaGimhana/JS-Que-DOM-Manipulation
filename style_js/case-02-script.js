@@ -7,10 +7,11 @@ const updateColors = () => {
     colors.unshift(lastColor);
 
     // array eke content ek maru krnw
-    colors.map((item,index) => {document.getElementsByTagName("div")[index].style.backgroundColor = item});
+    colors.map((item,index) => {document.getElementsByClassName("light")[index].style.backgroundColor = item});
 
     console.log(colors);
 }
 
 // function ekt intervalekk denw
 setInterval(updateColors, 3000);
+
